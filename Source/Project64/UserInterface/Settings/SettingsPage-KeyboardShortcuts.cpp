@@ -202,7 +202,7 @@ void COptionsShortCutsPage::OnAssignClicked(UINT /*Code*/, int /*id*/, HWND /*ct
     switch (RunningState)
     {
     case CMenuShortCutKey::RUNNING_STATE_NOT_RUNNING: AccessMode = CMenuShortCutKey::ACCESS_GAME_NOT_RUNNING; break;
-    case CMenuShortCutKey::RUNNING_STATE_WINDOWED: AccessMode = CMenuShortCutKey::ACCESS_GAME_RUNNING; break;
+    case CMenuShortCutKey::RUNNING_STATE_WINDOWED: AccessMode = CMenuShortCutKey::ACCESS_GAME_RUNNING_WINDOW; break;
     case CMenuShortCutKey::RUNNING_STATE_FULLSCREEN: AccessMode = CMenuShortCutKey::ACCESS_GAME_RUNNING_FULLSCREEN; break;
     }
     ShortCut->AddShortCut(key, bCtrl, bAlt, bShift, AccessMode, true, false);
